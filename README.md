@@ -13,6 +13,6 @@ A small front end for using CloudApp with Twitter for iPhone - more info coming 
 	
 ## Credits
 
-Using Aaron Russell's CloudApp API for Ruby
-Sinatra
-Heroku
+* Using Aaron Russell's CloudApp API for Ruby - [CloudApp API for Ruby](http://github.com/aaronrussell/cloudapp_api "CloudApp API for Ruby")
+* Sinatra
+* Heroku
