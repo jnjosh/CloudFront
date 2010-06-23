@@ -3,7 +3,8 @@ require 'sinatra'
 require 'cloudapp_api'
 
 get '/' do
-  "Welcome to CloudFront, more info coming soon"
+  @title = "Welcome to CloudFront"
+  erb :welcome
 end
 
 get '/shorten/' do
@@ -14,6 +15,5 @@ get '/shorten/' do
   CloudApp.authenticate @username, @password
   @item = CloudApp::Item.create :bookmark, {:name => @url, :redirect_url => @url}
   
-  newurl = @item["url"]
-  "#{newurl}"
+  return @item["url"]
 end
